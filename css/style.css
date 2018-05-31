@@ -1,0 +1,894 @@
+@charset "UTF-8";
+html, body { float: left; width: 100%; font-family: 'Roboto', sans-serif; background-color: #ffffff; }
+
+.content { float: none; width: 100%; max-width: 1120px; margin-left: auto; margin-right: auto; }
+
+.row { float: left; width: 100%; }
+
+.button { display: block; width: 222px; height: 56px; margin-left: auto; margin-right: auto; -webkit-border-radius: 50px; border-radius: 50px; color: #ffffff; font-size: 18px; font-weight: 500; line-height: 52px; text-align: center; text-decoration: none; border: 2px solid #79be0b; background-color: #79be0b; cursor: pointer; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+.button:hover { color: #79be0b; background-color: #ffffff; }
+
+input, textarea, button { outline: none; }
+
+header { float: left; width: 100%; }
+
+header .content { overflow: hidden; padding-bottom: 20px; }
+
+header .content .logo { float: left; display: inline-block; width: 29.92%; margin-top: 23px; margin-left: 9px; }
+
+header .content .logo img { width: 100%; }
+
+header .content .search { position: relative; float: left; width: 35.72%; margin-top: 37px; margin-left: 8.2%; }
+
+header .content .search input { width: 100%; height: 54px; padding: 0px 50px 0px 15px; -webkit-border-radius: 50px; border-radius: 50px; border: 2px solid #e5f0d2; font-family: 'Roboto', sans-serif; }
+
+header .content .search button { position: absolute; top: 50%; right: 20px; width: 24px; height: 24px; border: none; background-color: transparent; background-image: url(../image/search.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); cursor: pointer; }
+
+header .content .contacts { float: right; width: 100%; max-width: 181px; margin-top: 42px; }
+
+header .content .contacts a { display: block; text-align: right; color: #1a1a1a; font-size: 18px; font-weight: 500; line-height: 21.6px; text-decoration: none; }
+
+header .content .contacts a:first-child:before { content: ''; display: inline-block; width: 15px; height: 15px; margin-right: 18px; background-image: url(../image/phone.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+header .content .contacts a:last-child { margin-top: 4px; color: #808080; font-weight: 300; }
+
+header .content .contacts a:hover { text-decoration: underline; }
+
+header nav { width: 100%; padding: 15px 0; background-color: #9ec659; }
+
+header nav .content { padding-bottom: 0; }
+
+header nav .content .menu { float: left; width: 73.6%; margin-top: 5px; margin-left: 5px; }
+
+header nav .content .menu li { float: left; margin-right: 8.5%; }
+
+header nav .content .menu li:last-child { margin-right: 0; }
+
+header nav .content .menu li a { color: #1a1a1a; font-size: 18px; font-weight: 500; line-height: 18px; text-decoration: none; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+header nav .content .menu li a:hover { color: #ffffff; }
+
+header nav .content .menu .active a { color: #ffffff; }
+
+header nav .content .social { float: right; }
+
+header nav .content .social a { float: left; display: block; width: 30px; height: 30px; margin-left: 20px; background-image: url(../image/vk.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+header nav .content .social a:hover { background-image: url(../image/vk-hover.png); }
+
+header nav .content .social a:first-child { margin-left: 0; background-image: url(../image/instagram.png); }
+
+header nav .content .social a:first-child:hover { background-image: url(../image/instagram-hover.png); }
+
+header nav .content #burger { position: relative; display: none; float: left; width: 50px; }
+
+header nav .content #burger #open-menu { width: 25px; float: left; margin-right: 0; display: none; margin-top: 7px; cursor: pointer; border: none; outline: none; background: transparent; padding-left: 0; padding-right: 0; margin-left: 15px; display: block; }
+
+header nav .content #burger #open-menu span { width: 100%; height: 3px; display: block; float: left; margin-bottom: 6px; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; }
+
+header nav .content #burger .left { position: fixed; top: 0px; left: -100%; width: 100%; max-width: 270px; height: 100%; background-color: #9ec659; z-index: 999; -webkit-box-shadow: 0px 1px 5px #636363; box-shadow: 0px 1px 5px #636363; }
+
+header nav .content #burger .left ul { float: left; width: 100%; margin-top: 40px; }
+
+header nav .content #burger .left ul li { float: left; width: 100%; margin-right: 0; margin-bottom: 10px; }
+
+header nav .content #burger .left ul li.active a { color: #ffffff; }
+
+header nav .content #burger .left ul li a { padding-left: 20px; color: #1a1a1a; font-size: 18px; font-weight: 500; line-height: 18px; text-decoration: none; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+header nav .content #burger .left ul li a:hover { color: #ffffff; }
+
+header nav .content #burger .left .close { position: absolute; top: 10px; right: 10px; width: 20px; height: 20px; background: url(../image/close.png) no-repeat 100%; -webkit-background-size: cover; background-size: cover; cursor: pointer; }
+
+h1.title { float: left; width: 100%; padding: 68px 0; color: #79be0b; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-align: center; text-transform: uppercase; background-image: url(../image/contacts-bg.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; background-position: center; }
+
+h1.title span { margin-left: 10px; color: #ffffff; }
+
+h3 { float: left; width: 100%; color: #1a1a1a; font-size: 24px; font-weight: bold; line-height: 24px; text-align: center; text-transform: uppercase; }
+
+.line { width: 114px; height: 4px; margin-top: 40px; margin-left: auto; margin-right: auto; background-color: #79be0b; }
+
+#breadcrumbs { float: left; width: 100%; background-color: #e6e6e6; }
+
+#breadcrumbs .content ul { float: left; width: 100%; padding: 25px 0; }
+
+#breadcrumbs .content ul li { float: left; margin-right: 7px; color: #666666; font-size: 14px; font-weight: 400; line-height: 14px; }
+
+#breadcrumbs .content ul li:after { content: '/'; display: inline-block; margin-left: 7px; }
+
+#breadcrumbs .content ul li:last-child a { color: #79be0b; }
+
+#breadcrumbs .content ul li:last-child:after { display: none; }
+
+#breadcrumbs .content ul li a { color: #666666; text-decoration: none; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#breadcrumbs .content ul li a:hover { color: #79be0b; }
+
+footer { float: left; width: 100%; padding-top: 30px; background-color: #4d4d4d; }
+
+footer .content .row .logo { float: left; display: block; width: 100%; max-width: 258px; }
+
+footer .content .row .logo img { width: 100%; }
+
+footer .content .row nav { float: right; width: 100%; max-width: 715px; margin-top: 24px; }
+
+footer .content .row nav ul { float: right; width: 100%; }
+
+footer .content .row nav ul li { float: left; margin-left: 6.7%; }
+
+footer .content .row nav ul li:first-child { margin-left: 0; }
+
+footer .content .row nav ul li a { color: #ffffff; font-size: 18px; font-weight: 500; line-height: 18px; text-decoration: none; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+footer .content .row nav ul li a:hover { color: #79be0b; }
+
+footer .content .row nav ul .active a { color: #79be0b; }
+
+footer .content .row:last-child { margin: 32px 0; }
+
+footer .content .row .copyright { float: left; margin-top: 22px; color: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 400; line-height: 16px; }
+
+footer .content .row .contacts { float: left; margin-top: 2px; margin-left: 26%; }
+
+footer .content .row .contacts span { display: block; text-align: right; color: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 400; line-height: 18px; }
+
+footer .content .row .contacts span a { margin-left: 5px; color: #79be0b; text-decoration: none; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+footer .content .row .contacts span a:hover { color: #ffffff; }
+
+footer .content .row .social { float: right; }
+
+footer .content .row .social a { float: left; display: block; width: 36px; height: 36px; margin-left: 17px; background-image: url(../image/vk-green.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+footer .content .row .social a:hover { background-image: url(../image/vk.png); }
+
+footer .content .row .social a:first-child { width: 31px; height: 31px; margin-top: 3px; margin-left: 0; background-image: url(../image/instagram-green.png); }
+
+footer .content .row .social a:first-child:hover { background-image: url(../image/instagram.png); }
+
+.overlay, .overlay-modal { z-index: 101; position: fixed; background-color: #000; opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50); width: 100%; height: 100%; top: 0; left: 0; cursor: pointer; display: none; }
+
+.overlay-modal { z-index: 1000; }
+
+.modal { position: fixed; top: 10%; left: 50%; display: none; width: 500px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); z-index: 2000; }
+
+.modal form.have-free { width: 100%; padding: 20px 25px; border: 2px solid #79be0b; -webkit-border-radius: 4px; border-radius: 4px; background-color: #000000; }
+
+.modal form.have-free .close { position: absolute; top: 10px; right: 10px; width: 25px; height: 25px; background-image: url(../image/home/close.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; cursor: pointer; }
+
+.modal form.have-free .title { margin-top: 15px; margin-bottom: 30px; color: #ffffff; font-size: 20px; font-weight: bold; line-height: 20px; text-align: center; text-transform: uppercase; }
+
+.modal form.have-free input { width: 100%; margin-bottom: 10px; padding: 15px; border: 2px solid #cfe3ac; -webkit-border-radius: 3px; border-radius: 3px; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px; }
+
+.modal form.have-free input { height: 40px; padding: 0 15px; }
+
+.modal form.have-free .button { width: 100%; height: 52px; line-height: normal; }
+
+#training, #who-lead, #new-article, #calc, #documentation, #contacts, #review, #seminar, #courses, #sport-dietolog, #blog, #the-best-diet { float: left; width: 100%; }
+
+#training { overflow: hidden; background-color: #030303; }
+
+#training .content { position: relative; padding-top: 100px; padding-bottom: 110px; }
+
+#training .content .photo-bg { position: absolute; top: 0px; right: -170px; }
+
+#training .content .photo-bg img { width: 100%; }
+
+#training .content .training { position: relative; width: 627px; height: 257px; padding-left: 35px; border: 3px solid #ffffff; background-color: #030303; }
+
+#training .content .training h1, #training .content .training .green { padding-left: 25px; }
+
+#training .content .training h1 { position: relative; top: -20px; width: 91.3%; padding-right: 0px; color: #ffffff; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-transform: uppercase; background-color: #030303; }
+
+#training .content .training h1 span { margin-right: 10px; color: #79be0b; }
+
+#training .content .training .green { display: block; width: 76%; margin-top: 22px; color: #79be0b; font-family: Roboto; font-size: 18px; font-weight: 300; line-height: 18px; }
+
+#training .content .training .block { width: 308px; margin-top: 45px; padding: 0 25px; background-color: #030303; }
+
+#training .content .training .block .button { float: none; width: 100%; margin-left: 0; margin-right: 0; }
+
+#who-lead { padding-top: 80px; padding-bottom: 145px; background-image: url(../image/home/apple-photo-1-bg.png); background-repeat: no-repeat; background-position: right center; }
+
+#who-lead .content .block { position: relative; float: left; width: 940px; z-index: 100; }
+
+#who-lead .content .block .apple-photo { position: absolute; top: -54px; left: -230px; width: 336px; height: 273px; background-image: url(../image/home/apple-photo-2-bg.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; z-index: 101; }
+
+#who-lead .content .block .photo { position: relative; float: left; width: 37.24%; z-index: 10; }
+
+#who-lead .content .block .photo:before { content: ''; position: absolute; top: 31px; left: 27px; width: 100%; height: 100%; border: 4px solid #79be0b; z-index: 11; }
+
+#who-lead .content .block .photo img { width: 100%; }
+
+#who-lead .content .block .description { float: left; width: 62.76%; padding-left: 95px; padding-right: 10px; }
+
+#who-lead .content .block .description h2 { margin-bottom: 29px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-transform: uppercase; }
+
+#who-lead .content .block .description h2:after { content: ''; display: block; width: 114px; height: 4px; margin-top: 32px; background-color: #79be0b; }
+
+#who-lead .content .block .description .name { margin-bottom: 30px; color: #79be0b; font-family: 'Roboto Condensed', sans-serif; font-size: 20px; font-weight: bold; line-height: 20px; letter-spacing: 10px; text-transform: uppercase; }
+
+#who-lead .content .block .description p { margin-bottom: 20px; color: #666666; font-size: 16px; font-weight: 400; line-height: 16px; }
+
+#who-lead .content .block .description .button { float: left; width: 258px; margin-top: 91px; }
+
+#new-article { overflow: hidden; position: relative; padding-bottom: 120px; }
+
+#new-article .grey-bg { position: absolute; left: 0px; bottom: -180px; width: 100%; height: 400px; background-color: #f2f2f4; -webkit-transform: skewY(-5deg); -ms-transform: skewY(-5deg); transform: skewY(-5deg); z-index: 5; }
+
+#new-article .leaf-1, #new-article .leaf-2 { position: absolute; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; z-index: 10; }
+
+#new-article .leaf-1 { top: 50px; right: 135px; width: 79px; height: 128px; background-image: url(../image/home/leaf-1.png); }
+
+#new-article .leaf-2 { top: 240px; left: 170px; width: 126px; height: 62px; background-image: url(../image/home/leaf-2.png); }
+
+#new-article .content { position: relative; z-index: 100; }
+
+#new-article .content h2 { margin-bottom: 58px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-align: center; text-transform: uppercase; }
+
+#new-article .content h2:after { content: ''; display: block; width: 114px; height: 4px; margin-top: 27px; margin-left: auto; margin-right: auto; background-color: #79be0b; }
+
+#new-article .content a { position: relative; float: left; width: 31.43%; min-height: 175px; margin-right: 2.85%; padding: 25px 25px 20px; text-decoration: none; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+#new-article .content a:hover p, #new-article .content a:hover span { color: #ffffff; }
+
+#new-article .content a:hover .title { color: #79be0b; }
+
+#new-article .content a.article-first { background-image: url(../image/home/new-article-photo-1.png); }
+
+#new-article .content a.article-second { background-image: url(../image/home/new-article-photo-2.png); }
+
+#new-article .content a.article-second .title { margin-bottom: 26px; }
+
+#new-article .content a.article-third { margin-right: 0; background-image: url(../image/home/new-article-photo-3.png); }
+
+#new-article .content a .category { margin-bottom: 17px; color: #79be0b; font-family: 'Roboto Condensed', sans-serif; font-size: 12px; font-weight: bold; line-height: 11.71px; letter-spacing: 5.5px; text-transform: uppercase; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#new-article .content a .title { width: 100%; max-width: 195px; margin-bottom: 45px; color: #ffffff; font-family: 'Roboto Condensed', sans-serif; font-size: 20px; font-weight: bold; line-height: 19.51px; text-transform: uppercase; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#new-article .content a .link { color: #79be0b; font-size: 12px; font-weight: 400; line-height: 11.71px; text-decoration: underline; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#new-article .content a .link:after { content: '>'; display: inline-block; margin-left: 8px; font-size: 18px; vertical-align: middle; }
+
+#calc { position: relative; overflow: hidden; padding-bottom: 110px; }
+
+#calc .grey-bg { position: absolute; left: 0px; top: -120px; width: 100%; height: 1220px; background-color: #f2f2f4; -webkit-transform: skewY(5deg); -ms-transform: skewY(5deg); transform: skewY(5deg); z-index: 5; }
+
+#calc .leaf-3, #calc .leaf-4, #calc .leaf-5 { position: absolute; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; z-index: 10; }
+
+#calc .leaf-3 { top: 50px; right: 65px; width: 308px; height: 218px; background-image: url(../image/home/leaf-3.png); }
+
+#calc .leaf-4 { top: 45%; left: 55px; width: 374px; height: 333px; background-image: url(../image/home/leaf-4.png); }
+
+#calc .leaf-5 { bottom: 170px; right: 135px; width: 133px; height: 97px; background-image: url(../image/home/leaf-5.png); }
+
+#calc .content { position: relative; z-index: 10; }
+
+#calc .content h2 { margin-bottom: 58px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-align: center; text-transform: uppercase; }
+
+#calc .content h2:after { content: ''; display: block; width: 114px; height: 4px; margin-top: 27px; margin-left: auto; margin-right: auto; background-color: #79be0b; }
+
+#calc .content .block { width: 90.36%; margin-left: 4.82%; margin-right: 4.82%; padding-top: 310px; padding-bottom: 190px; background-image: url(../image/home/big-apple-bg.png); background-repeat: no-repeat; background-position: center top; }
+
+#calc .content .block form { width: 605px; margin-left: auto; margin-right: auto; }
+
+#calc .content .block form > div { display: inline-block; width: 100%; padding: 20px 0; }
+
+#calc .content .block form .title { float: left; width: 135px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 400; line-height: 24px; }
+
+#calc .content .block form label { color: #4d4d4d; font-family: 'Roboto Condensed', sans-serif; font-size: 18px; font-weight: 400; line-height: 18px; }
+
+#calc .content .block form #age, #calc .content .block form #weight, #calc .content .block form #height, #calc .content .block form #slider { float: right; width: 77.35%; height: 6px; margin-top: 11px; -webkit-border-radius: 50px; border-radius: 50px; }
+
+#calc .content .block form #custom-handle, #calc .content .block form .ui-slider-handle { border: none; -webkit-border-radius: 50px; border-radius: 50px; -webkit-box-shadow: 0 1px 2px 0 #4d4d4d; box-shadow: 0 1px 2px 0 #4d4d4d; background-color: #79be0b; }
+
+#calc .content .block form #custom-handle span, #calc .content .block form .ui-slider-handle span { position: absolute; top: -20px; color: #4d4d4d; font-size: 18px; font-weight: 400; line-height: 18px; }
+
+#calc .content .block form .ui-widget.ui-widget-content { border: none; }
+
+#calc .content .block form .ui-widget-header { background-color: #79be0b; }
+
+#calc .content .block form .gender { /* The container */ /* Hide the browser's default radio button */ /* Create a custom radio button */ /* On mouse-over, add a grey background color */ /* When the radio button is checked, add a blue background */ }
+
+#calc .content .block form .gender .title { margin-right: 5px; }
+
+#calc .content .block form .gender .radio-but { position: relative; margin-right: 62px; padding-left: 32px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+#calc .content .block form .gender .radio-but:last-child { margin-right: 0; }
+
+#calc .content .block form .gender .radio-but input { position: absolute; opacity: 0; cursor: pointer; }
+
+#calc .content .block form .gender .checkmark { position: absolute; top: 0; left: 0; height: 22px; width: 22px; background-image: url(../image/radio-unchecked.png); }
+
+#calc .content .block form .gender .radio-but:hover input ~ .checkmark { background-image: url(../image/radio-checked.png); }
+
+#calc .content .block form .gender .radio-but input:checked ~ .checkmark { background-image: url(../image/radio-checked.png); }
+
+#calc .content .block form .lifestyle { padding-top: 10px; }
+
+#calc .content .block form .lifestyle .title { margin-top: 18px; }
+
+#calc .content .block form .lifestyle #slider { margin-top: 0; }
+
+#calc .content .block form .lifestyle select { display: block; margin-left: auto; margin-right: auto; margin-bottom: 5px; border: none; color: #4d4d4d; font-size: 18px; font-weight: 400; line-height: 18px; background-color: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+#calc .content .block form .box { display: inline-block; width: 100%; padding-top: 50px; }
+
+#calc .content .block form .box .container { float: left; width: 50%; margin-bottom: 25px; padding-right: 20px; }
+
+#calc .content .block form .box .container:first-child input { float: none; }
+
+#calc .content .block form .box .container p { width: 100%; margin-bottom: 14px; }
+
+#calc .content .block form .box .container input { float: left; width: 70px; height: 41px; margin-right: 25px; padding: 0 5px; border: none; -webkit-border-radius: 5px; border-radius: 5px; color: #ffffff; font-family: 'Roboto Condensed', sans-serif; font-size: 18px; font-weight: 400; line-height: 18px; text-align: center; background-color: #79be0b; }
+
+#calc .content .block form .box .container input.red { background-color: #f31850; }
+
+#calc .content .block form .box .container span { padding-right: 45px; color: #9ba879; font-family: 'Roboto Condensed', sans-serif; font-size: 18px; font-weight: 400; line-height: 18px; }
+
+#calc .content .block form .button { width: 258px; }
+
+#documentation { padding-bottom: 50px; }
+
+#documentation .content h2 { margin-bottom: 58px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-align: center; text-transform: uppercase; }
+
+#documentation .content h2:after { content: ''; display: block; width: 114px; height: 4px; margin-top: 27px; margin-left: auto; margin-right: auto; background-color: #79be0b; }
+
+#documentation .content .docum { width: 100%; }
+
+#documentation .content .docum .slick-prev, #documentation .content .docum .slick-next { position: absolute; top: 50%; width: 61px; height: 61px; font-size: 1px; color: transparent; border: none; background-color: transparent; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; cursor: pointer; }
+
+#documentation .content .docum .slick-prev { left: -61px; background-image: url(../image/home/slider-arrow.png); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+#documentation .content .docum .slick-next { right: -61px; background-image: url(../image/home/slider-arrow.png); -webkit-transform: translateY(-50%) rotate(180deg); -ms-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg); }
+
+#documentation .content .docum a { display: block; padding: 0 13px; }
+
+#documentation .content .docum a img { width: 100%; }
+
+#contacts .content h2 { float: none; width: 78.13%; margin-top: 45px; margin-left: auto; margin-right: auto; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 26px; font-weight: bold; line-height: 26px; text-align: center; text-transform: uppercase; }
+
+#contacts .content .row { margin-top: 55px; margin-bottom: 60px; }
+
+#contacts .content .row .left { float: left; width: 30%; }
+
+#contacts .content .row .left ul li { float: left; width: 100%; margin-bottom: 23px; color: #4d4d4d; font-size: 16px; font-weight: 400; line-height: 16px; }
+
+#contacts .content .row .left ul li:last-child { margin-bottom: 0; }
+
+#contacts .content .row .left ul li img { margin-right: 25px; vertical-align: middle; }
+
+#contacts .content .row form { float: right; width: 65.63%; }
+
+#contacts .content .row form textarea { float: left; width: 61.23%; min-height: 195px; padding: 10px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; font-family: 'Roboto', sans-serif; }
+
+#contacts .content .row form div { float: right; width: 35.38%; }
+
+#contacts .content .row form div input { float: left; width: 100%; height: 43px; margin-bottom: 15px; padding: 0 10px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; font-family: 'Roboto', sans-serif; }
+
+#contacts .content .row form div button { float: left; width: 100%; height: 50px; margin-top: 30px; line-height: 18px; cursor: pointer; }
+
+#review .content { padding-top: 10px; padding-bottom: 10px; }
+
+#review .content .review { display: inline-block; width: 100%; padding: 30px 0; border-bottom: 2px solid #dbeac1; }
+
+#review .content .review:last-child { border-bottom: none; }
+
+#review .content .review .photo { float: left; width: 14.5%; }
+
+#review .content .review .photo img { width: 100%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid #79be0b; }
+
+#review .content .review .photo span { display: block; margin-top: 6px; color: #808080; font-size: 14px; font-weight: 400; line-height: 14px; text-align: center; }
+
+#review .content .review .photo .name { margin-top: 17px; color: #1a1a1a; font-size: 18px; font-weight: bold; line-height: 18px; text-transform: uppercase; }
+
+#review .content .review .text { position: relative; float: left; width: 82.33%; margin-left: 3.17%; padding: 25px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; }
+
+#review .content .review .text:before { content: ''; position: absolute; top: 25px; left: -22px; display: block; width: 23px; height: 34px; background-image: url(../image/review/review-arrow.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+#review .content .review .text .date { display: block; margin-bottom: 15px; color: #79be0b; font-size: 16px; font-weight: 400; line-height: 16px; text-align: left; text-transform: uppercase; }
+
+#review .content .review .text .message { color: #1a1a1a; font-size: 18px; font-style: italic; font-weight: 400; line-height: 18px; }
+
+#review .content .review .text .hover { margin-left: 5px; }
+
+#review .content .review .text .all-message { float: right; margin-top: 25px; color: #79be0b; font-family: Roboto; font-size: 18px; font-weight: 500; line-height: 18px; text-decoration: none; }
+
+#review .content .review .text .all-message:hover { text-decoration: underline; }
+
+#review .button { margin-bottom: 40px; }
+
+#seminar .content { padding-top: 10px; padding-bottom: 10px; }
+
+#seminar .content .seminar { display: inline-block; width: 100%; padding: 30px 0; border-bottom: 2px solid #dbeac1; }
+
+#seminar .content .seminar:last-child { border: none; }
+
+#seminar .content .seminar .block-p-d { float: left; width: 39.5%; }
+
+#seminar .content .seminar .block-p-d .photo { float: left; width: 36.64%; }
+
+#seminar .content .seminar .block-p-d .photo img { width: 100%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid #79be0b; }
+
+#seminar .content .seminar .block-p-d .date { float: left; width: 63.36%; min-height: 164px; padding-left: 10px; }
+
+#seminar .content .seminar .block-p-d .date .day { float: left; margin-top: 30px; margin-right: 10px; color: #1a1a1a; font-family: "Myriad Pro"; font-size: 120px; font-weight: bold; line-height: 120px; }
+
+#seminar .content .seminar .block-p-d .date .month { display: block; margin-top: 57px; margin-bottom: 7px; color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 20px; text-transform: uppercase; }
+
+#seminar .content .seminar .block-p-d .date .month .year { margin-left: 8px; }
+
+#seminar .content .seminar .block-p-d .date .start { display: block; color: #808080; font-size: 16px; font-weight: 400; line-height: 16px; }
+
+#seminar .content .seminar .block-d-l { float: left; width: 57.89%; margin-left: 2.61%; }
+
+#seminar .content .seminar .block-d-l .description { float: left; width: 70.95%; padding-top: 15px; }
+
+#seminar .content .seminar .block-d-l .description .category { margin-bottom: 10px; color: #79be0b; font-size: 16px; font-weight: bold; line-height: 16px; text-transform: uppercase; }
+
+#seminar .content .seminar .block-d-l .description .title { margin-bottom: 10px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 26px; font-weight: bold; line-height: 26px; text-transform: uppercase; }
+
+#seminar .content .seminar .block-d-l .description .snippet { color: #808080; font-size: 16px; font-weight: 300; line-height: 18px; }
+
+#seminar .content .seminar .block-d-l .links { float: left; width: 25.45%; margin-left: 3.6%; padding-top: 30px; }
+
+#seminar .content .seminar .block-d-l .links .button { width: 100%; }
+
+#seminar .content .seminar .block-d-l .links .more { display: table; margin-top: 25px; margin-left: auto; margin-right: auto; color: #1a1a1a; font-size: 18px; font-weight: 500; line-height: 18px; text-decoration: none; }
+
+#seminar .content .seminar .block-d-l .links .more:hover { text-decoration: underline; }
+
+#seminar .sem-but { width: 100%; max-width: 352px; margin-bottom: 50px; color: #79be0b; line-height: 52px; background-color: #ffffff; }
+
+#seminar .sem-but:hover { color: #ffffff; background-color: #79be0b; }
+
+#courses .content { max-width: 925px; }
+
+#courses .content h2 { margin-top: 38px; margin-bottom: 90px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 40px; font-weight: bold; line-height: 40px; text-align: center; text-transform: uppercase; }
+
+#courses .content .block { overflow: hidden; width: 100%; margin-bottom: 50px; }
+
+#courses .content .block .course, #courses .content .block .description { float: left; width: 50%; }
+
+#courses .content .block .course { position: relative; -webkit-border-radius: 0 30px 30px 0; border-radius: 0 30px 30px 0; -webkit-box-shadow: 15px 0px 12px 0px #4a6645; box-shadow: 15px 0px 12px 0px #4a6645; }
+
+#courses .content .block .course .photo { position: relative; float: left; width: 100%; }
+
+#courses .content .block .course .photo img { display: block; width: 100%; -webkit-border-radius: 20px 0 0 0; border-radius: 20px 0 0 0; }
+
+#courses .content .block .course .photo .cour-ab { position: absolute; bottom: -28px; left: 50%; display: block; width: 151px; height: 56px; -webkit-border-radius: 50px; border-radius: 50px; color: #ffffff; font-size: 18px; font-weight: 500; line-height: 56px; text-align: center; background-color: #79be0b; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+#courses .content .block .course .border { float: left; width: 100%; padding: 60px 15px 55px; border: 2px solid #e6e6e6; -webkit-border-radius: 0 0 0 20px; border-radius: 0 0 0 20px; background-color: #ffffff; }
+
+#courses .content .block .course .border h3 .line { width: 85px; height: 3px; margin-top: 18px; }
+
+#courses .content .block .course .border .price { float: left; width: 100%; margin-top: 35px; color: #79be0b; font-size: 24px; font-weight: bold; line-height: 24px; text-align: center; text-transform: uppercase; }
+
+#courses .content .block .course .border .price:before { content: 'Р'; display: inline-block; margin-right: 7px; }
+
+#courses .content .block .course .border .price:after { content: '/ месяц'; display: inline-block; margin-left: 5px; color: #9ba879; font-size: 14px; font-style: italic; text-transform: none; }
+
+#courses .content .block .course .border .work { float: left; width: 100%; margin-top: 35px; padding-left: 55px; color: #2b2a29; font-size: 14px; font-weight: bold; line-height: 21px; }
+
+#courses .content .block .course .border .list { float: left; width: 100%; margin-top: 23px; padding-left: 55px; }
+
+#courses .content .block .course .border .list li { float: left; width: 100%; color: #2b2a29; font-size: 14px; font-weight: 400; line-height: 21px; list-style-image: url(../image/course-and-price/list-marker-green.png); list-style-position: inside; }
+
+#courses .content .block .description { padding: 45px 30px; -webkit-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; background-color: #79be0b; }
+
+#courses .content .block .description h3 .line { width: 85px; height: 3px; margin-top: 18px; background-color: #333333; }
+
+#courses .content .block .description .raiting { float: left; width: 100%; margin-top: 24px; margin-bottom: 45px; }
+
+#courses .content .block .description .raiting .stars { position: relative; left: 50%; display: inline-block; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+#courses .content .block .description .raiting .stars li { float: left; width: 18px; height: 18px; margin-right: 10px; background-image: url(../image/course-and-price/star.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+#courses .content .block .description .raiting .stars li:last-child { margin-right: 0px; }
+
+#courses .content .block .description .raiting .stars .star { background-image: url(../image/course-and-price/star-active.png); }
+
+#courses .content .block .description .what-do { float: left; width: 100%; margin-bottom: 30px; padding: 0 50px; color: #2b2a29; font-size: 16px; font-weight: bold; line-height: 16px; text-align: center; }
+
+#courses .content .block .description .list { float: left; width: 100%; margin-bottom: 131px; padding-left: 30px; }
+
+#courses .content .block .description .list li { float: left; width: 100%; color: #2b2a29; font-size: 15px; font-weight: 400; line-height: 22.5px; list-style-image: url(../image/course-and-price/list-marker-white.png); }
+
+#courses .content .block .description .button { display: table; width: 257px; border-color: #ffffff; }
+
+#courses .content .block .description .button:hover { color: #79be0b; background-color: #ffffff; }
+
+#sport-dietolog { padding-top: 35px; }
+
+#sport-dietolog .content .block { float: left; width: 31.53%; margin-right: 2.7%; margin-bottom: 50px; -webkit-border-radius: 15px; border-radius: 15px; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#sport-dietolog .content .block:last-child { margin-right: 0; }
+
+#sport-dietolog .content .block:hover { -webkit-box-shadow: 0 0 10px 5px #9a94a1; box-shadow: 0 0 10px 5px #9a94a1; }
+
+#sport-dietolog .content .block .photo { position: relative; width: 100%; }
+
+#sport-dietolog .content .block .photo img { display: block; width: 100%; -webkit-border-radius: 15px 15px 0 0; border-radius: 15px 15px 0 0; }
+
+#sport-dietolog .content .block .photo .photo-overlay { position: absolute; top: 48px; left: 0px; width: 100%; }
+
+#sport-dietolog .content .block .photo .photo-overlay span { float: left; width: 100%; text-align: center; }
+
+#sport-dietolog .content .block .photo .photo-overlay .title { padding: 0 40px; color: #79be0b; font-size: 24px; font-weight: bold; line-height: 24px; text-transform: uppercase; }
+
+#sport-dietolog .content .block .photo .photo-overlay .snippet { margin-top: 23px; padding: 0 45px; color: #ffffff; font-size: 14px; font-style: italic; line-height: 14px; }
+
+#sport-dietolog .content .block .photo .money { position: absolute; left: 50%; bottom: -24px; display: block; width: 183px; height: 50px; border: 2px solid #79be0b; -webkit-border-radius: 50px; border-radius: 50px; color: #1a1a1a; font-size: 27px; font-weight: bold; line-height: 50px; text-align: center; background-color: #ffffff; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); z-index: 10; }
+
+#sport-dietolog .content .block .photo .money:after { content: 'Р'; display: inline-block; margin-left: 5px; }
+
+#sport-dietolog .content .block .border { position: relative; width: 100%; min-height: 379px; padding: 60px 25px 125px 25px; border: 2px solid #79be0b; -webkit-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px; z-index: 5; }
+
+#sport-dietolog .content .block .border .list { display: inline-block; width: 100%; padding-left: 25px; }
+
+#sport-dietolog .content .block .border .list li { float: left; width: 100%; margin-bottom: 10px; padding-left: 10px; list-style-image: url(../image/course-and-price/list-marker-green.png); color: #1a1a1a; font-size: 14px; font-weight: 400; line-height: 16px; }
+
+#sport-dietolog .content .block .border .list li a { margin-left: 5px; color: #79be0b; text-decoration: none; }
+
+#sport-dietolog .content .block .border .list li a:hover { text-decoration: underline; }
+
+#sport-dietolog .content .block .border .button { position: absolute; left: 50%; bottom: 25px; width: 80%; margin-top: 25px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+#sport-dietolog .content .block .border .button:before { content: ''; position: absolute; top: -28px; left: -5%; display: block; width: 110%; height: 1px; background-color: #79be0b; }
+
+#blog a { text-decoration: none; }
+
+#blog .content .box .training, #blog .content .box .exercises { float: left; width: 100%; }
+
+#blog .content .box .exercises { display: none; }
+
+#blog .content .box > div .title { color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-weight: bold; text-transform: uppercase; }
+
+#blog .content .box > div .snippet { color: #4d4d4d; font-size: 14px; font-weight: 300; font-style: italic; line-height: 14px; }
+
+#blog .content .box > div .category { float: left; padding-right: 15px; color: #79be0b; font-family: 'Roboto Condensed', sans-serif; font-weight: bold; text-transform: uppercase; }
+
+#blog .content .box > div .date { float: left; color: #1a1a1a; font-weight: 500; }
+
+#blog .content .box > div .article-big { float: left; width: 100%; margin-bottom: 10px; padding-top: 15px; padding-bottom: 15px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+#blog .content .box > div .article-big:hover { -webkit-box-shadow: 0 0 10px 0 #a6a0ad; box-shadow: 0 0 10px 0 #a6a0ad; }
+
+#blog .content .box > div .article-big .details { float: left; width: 39.47%; padding: 30px 18px 22px 15px; }
+
+#blog .content .box > div .article-big .details .title { margin-bottom: 30px; font-size: 26px; line-height: 26px; }
+
+#blog .content .box > div .article-big .details .category { width: 73.5%; margin-top: 35px; font-size: 14px; line-height: 14px; }
+
+#blog .content .box > div .article-big .details .date { width: 26.5%; margin-top: 37px; font-size: 12px; line-height: 12px; }
+
+#blog .content .box > div .article-big .photo { float: left; width: 60.53%; padding-right: 15px; }
+
+#blog .content .box > div .article-big .photo img { display: block; width: 100%; }
+
+#blog .content .box > div .article-small { float: left; width: 50%; padding: 20px 15px 30px 15px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#blog .content .box > div .article-small:hover { -webkit-box-shadow: 0 0 10px 0 #a6a0ad; box-shadow: 0 0 10px 0 #a6a0ad; }
+
+#blog .content .box > div .article-small img { display: block; width: 100%; }
+
+#blog .content .box > div .article-small .title { margin-top: 20px; font-size: 18px; line-height: 18px; }
+
+#blog .content .box > div .article-small .snippet { margin: 25px 0; }
+
+#blog .content .box > div .article-small .category { width: 70%; }
+
+#blog .content .box > div .article-small .date { float: right; width: 30%; text-align: right; }
+
+#blog .list, #the-best-diet .list { position: relative; display: inline-block; width: 100%; margin-top: 34px; margin-bottom: 25px; padding: 0 95px; }
+
+#blog .list:after, #the-best-diet .list:after { position: absolute; bottom: 1px; left: 0px; content: ''; width: 100%; border-bottom: 1px solid #c9dfa2; z-index: 14; }
+
+#blog .list li, #the-best-diet .list li { position: relative; float: left; padding: 10px 38px; border: 1px solid transparent; -webkit-border-radius: 15px 15px 0 0; border-radius: 15px 15px 0 0; color: #9ec659; font-family: 'Roboto Condensed', sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-transform: uppercase; background-color: transparent; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; cursor: pointer; z-index: 15; }
+
+#blog .list li:hover, #blog .list li.active, #the-best-diet .list li:hover, #the-best-diet .list li.active { color: #1a1a1a; }
+
+#blog .list li.active, #the-best-diet .list li.active { color: #1a1a1a; border-bottom: none; border-color: #c9dfa2; background-color: #ffffff; }
+
+#blog .box, #the-best-diet .box { float: left; width: 67.86%; margin-bottom: 35px; }
+
+#blog .sidebar, #the-best-diet .sidebar { float: left; width: 31.43%; margin-top: 15px; margin-left: 0.71%; margin-bottom: 35px; }
+
+#blog .sidebar .subscribe, #the-best-diet .sidebar .subscribe { float: left; width: 100%; padding: 20px 25px; border: 2px solid #79be0b; -webkit-border-radius: 4px; border-radius: 4px; }
+
+#blog .sidebar .subscribe .title, #the-best-diet .sidebar .subscribe .title { margin-bottom: 10px; color: #1a1a1a; font-size: 16px; font-weight: bold; line-height: 16px; text-align: center; text-transform: uppercase; }
+
+#blog .sidebar .subscribe textarea, #blog .sidebar .subscribe input, #the-best-diet .sidebar .subscribe textarea, #the-best-diet .sidebar .subscribe input { width: 100%; margin-bottom: 10px; padding: 15px; border: 2px solid #cfe3ac; -webkit-border-radius: 3px; border-radius: 3px; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px; }
+
+#blog .sidebar .subscribe textarea, #the-best-diet .sidebar .subscribe textarea { max-width: 100%; min-height: 120px; }
+
+#blog .sidebar .subscribe input, #the-best-diet .sidebar .subscribe input { height: 40px; padding: 0 15px; }
+
+#blog .sidebar .subscribe .button, #the-best-diet .sidebar .subscribe .button { width: 100%; height: 52px; line-height: normal; }
+
+#blog .sidebar h2, #the-best-diet .sidebar h2 { float: left; width: 100%; margin: 25px 0; color: #1a1a1a; font-size: 16px; font-weight: bold; line-height: 16px; text-align: center; text-transform: uppercase; }
+
+#blog .sidebar .block, #the-best-diet .sidebar .block { overflow: hidden; position: relative; float: left; width: 100%; margin-bottom: 25px; }
+
+#blog .sidebar .block:hover img, #the-best-diet .sidebar .block:hover img { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+
+#blog .sidebar .block img, #the-best-diet .sidebar .block img { display: block; width: 100%; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+
+#blog .sidebar .block .hover, #the-best-diet .sidebar .block .hover { position: absolute; left: 0px; bottom: 0%; width: 100%; padding: 20px 20px 15px; color: #ffffff; font-family: 'Roboto Condensed', sans-serif; font-size: 18px; font-weight: bold; line-height: 18px; text-transform: uppercase; text-align: center; background-color: rgba(0, 0, 0, 0.7); }
+
+#the-best-diet .content .list { margin-bottom: 40px; }
+
+#the-best-diet .content .box { width: 65.18%; margin-top: 0; }
+
+#the-best-diet .content .box h2.title { margin-bottom: 23px; color: #1a1a1a; font-family: 'Roboto Condensed', sans-serif; font-size: 26px; font-weight: bold; line-height: 26px; text-align: left; text-transform: uppercase; }
+
+#the-best-diet .content .box .photo-big { display: block; width: 100%; }
+
+#the-best-diet .content .box p { margin: 20px 0; color: #4f4f4f; font-size: 16px; font-weight: 300; }
+
+#the-best-diet .content .box h3 { float: none; color: #4f4f4f; font-size: 18px; text-align: left; text-transform: none; }
+
+#the-best-diet .content .box ul { width: 100%; padding-left: 25px; }
+
+#the-best-diet .content .box ul li { list-style-image: url(../image/course-and-price/list-marker-green.png); color: #4f4f4f; font-size: 16px; font-weight: 300; }
+
+#the-best-diet .content .box .social { display: inline-block; width: 100%; margin-top: 70px; }
+
+#the-best-diet .content .box .social a { float: left; display: block; width: 40px; height: 40px; margin-right: 12px; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+#the-best-diet .content .box .social a.vk { background-image: url(../image/blog-vk.png); }
+
+#the-best-diet .content .box .social a.googl { background-image: url(../image/blog-google.png); }
+
+#the-best-diet .content .box .social a.faceb { background-image: url(../image/blog-facebook.png); }
+
+#the-best-diet .content .box .social a.odnok { margin-right: 0; background-image: url(../image/blog-odnok.png); }
+
+#the-best-diet .content .box .comments { width: 100%; margin-top: 40px; }
+
+#the-best-diet .content .box .comments .review, #the-best-diet .content .box .comments .answer { display: inline-block; width: 100%; padding: 7.5px 0; }
+
+#the-best-diet .content .box .comments .review:last-child, #the-best-diet .content .box .comments .answer:last-child { border-bottom: none; }
+
+#the-best-diet .content .box .comments .review .photo, #the-best-diet .content .box .comments .answer .photo { float: left; width: 17.67%; padding-right: 24px; }
+
+#the-best-diet .content .box .comments .review .photo img, #the-best-diet .content .box .comments .answer .photo img { width: 100%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid #79be0b; }
+
+#the-best-diet .content .box .comments .review .text, #the-best-diet .content .box .comments .answer .text { position: relative; float: left; width: 82.33%; padding: 25px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; }
+
+#the-best-diet .content .box .comments .review .text:before, #the-best-diet .content .box .comments .answer .text:before { content: ''; position: absolute; top: 25px; left: -22px; display: block; width: 23px; height: 34px; background-image: url(../image/review/review-arrow.png); background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+#the-best-diet .content .box .comments .review .text div, #the-best-diet .content .box .comments .answer .text div { float: left; width: 51%; margin-bottom: 15px; }
+
+#the-best-diet .content .box .comments .review .text div span, #the-best-diet .content .box .comments .answer .text div span { display: block; text-align: left; text-transform: uppercase; }
+
+#the-best-diet .content .box .comments .review .text div .name, #the-best-diet .content .box .comments .answer .text div .name { margin-bottom: 10px; color: #1a1a1a; font-size: 18px; font-weight: bold; line-height: 18px; }
+
+#the-best-diet .content .box .comments .review .text div .date, #the-best-diet .content .box .comments .answer .text div .date { color: #79be0b; font-size: 16px; font-weight: 400; line-height: 16px; }
+
+#the-best-diet .content .box .comments .review .text .button, #the-best-diet .content .box .comments .answer .text .button { float: right; width: 103px; height: 30px; color: #79be0b; font-size: 14px; line-height: 26px; background-color: #ffffff; }
+
+#the-best-diet .content .box .comments .review .text .button:hover, #the-best-diet .content .box .comments .answer .text .button:hover { color: #ffffff; background-color: #79be0b; }
+
+#the-best-diet .content .box .comments .review .text .message, #the-best-diet .content .box .comments .answer .text .message { float: left; margin-top: 10px; margin-bottom: 0; color: #1a1a1a; font-size: 18px; font-style: italic; font-weight: 400; line-height: 18px; }
+
+#the-best-diet .content .box .comments .answer { width: 85%; margin-left: 15%; }
+
+#the-best-diet .content .box .add-com { display: inline-block; width: 100%; margin-top: 60px; }
+
+#the-best-diet .content .box .add-com h3 { color: #000000; }
+
+#the-best-diet .content .box .add-com p { margin: 15px 0; color: #000000; font-weight: 500; }
+
+#the-best-diet .content .box .add-com p.green { margin-top: 10px; color: #79be0b; font-weight: 400; }
+
+#the-best-diet .content .box .add-com textarea { float: left; width: 100%; max-width: 100%; min-height: 245px; margin-bottom: 15px; padding: 10px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; font-family: 'Roboto', sans-serif; }
+
+#the-best-diet .content .box .add-com input { float: left; width: 35.21%; margin-right: 1.43%; height: 48px; padding: 0 10px; border: 2px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; font-family: 'Roboto', sans-serif; }
+
+#the-best-diet .content .box .add-com .button { float: left; width: 26.72%; height: 48px; line-height: normal; }
+
+#the-best-diet .content .sidebar { margin-top: 0; margin-left: 3.39%; }
+
+@media (max-width: 1600px) { #who-lead .content .block .description { width: 43%; }
+  #who-lead .content .block .description .button { margin-top: 25px; } }
+
+@media (max-width: 1250px) { #who-lead { background-image: none; }
+  #who-lead .content .block .description { width: 62.76%; }
+  #documentation .content .docum { width: 80%; margin-left: 10%; margin-right: 10%; } }
+
+@media (max-width: 1150px) { .content { padding-left: 15px; padding-right: 15px; }
+  header nav .content .menu { display: none; }
+  header nav .content #burger { display: block; }
+  header nav .content #burger .left ul { display: block; }
+  footer .content .row nav { max-width: 690px; }
+  footer .content .row nav ul li { margin-left: 6.3%; }
+  #seminar .content .seminar .block-p-d, #seminar .content .seminar .block-d-l { float: none; display: table; min-width: 430px; margin-left: auto; margin-right: auto; }
+  #seminar .content .seminar .block-d-l { min-width: 630px; padding-top: 30px; }
+  #courses .content .block .description .list { margin-bottom: 74px; }
+  #sport-dietolog .content .block .photo .photo-overlay { top: 30px; }
+  #sport-dietolog .content .block .photo .photo-overlay .title, #sport-dietolog .content .block .photo .photo-overlay .snippet { padding: 0 20px; }
+  #sport-dietolog .content .block .border { min-height: 385px; }
+  #blog .content .box > div .article-big .details { padding-top: 5px; }
+  #blog .content .box > div .article-big .details .title { font-size: 22px; line-height: 22px; }
+  #blog .content .list, #the-best-diet .content .list { padding: 0 23px; }
+  #who-lead { background-image: none; }
+  #who-lead .content .block .apple-photo { display: none; }
+  #new-article .leaf-1, #new-article .leaf-2 { display: none; }
+  #calc .leaf-3, #calc .leaf-4, #calc .leaf-5 { display: none; }
+  #calc .content .block { width: 100%; margin-left: 0; margin-right: 0; } }
+
+@media (max-width: 1000px) { footer .content .row .logo { float: none; margin-left: auto; margin-right: auto; }
+  footer .content .row nav { float: none; margin-left: auto; margin-right: auto; }
+  footer .content .row .copyright { float: none; display: block; text-align: center; }
+  footer .content .row .contacts { float: none; margin-left: 0; }
+  footer .content .row .contacts span { text-align: center; }
+  footer .content .row .social { float: none; width: 85px; margin-top: 20px; margin-left: auto; margin-right: auto; }
+  #sport-dietolog .content .block { width: 48%; margin-right: 4%; }
+  #sport-dietolog .content .block:nth-child(2n) { margin-right: 0; }
+  #blog .content .box > div .article-big .details { width: 100%; }
+  #blog .content .box > div .article-big .photo { float: none; width: 380px; margin-left: auto; margin-right: auto; padding-right: 0; }
+  #blog .content .box > div .article-small { width: 100%; }
+  #blog .content .box > div .article-small img { width: 380px; margin-left: auto; margin-right: auto; }
+  #blog .content .list, #the-best-diet .content .list { overflow: hidden; display: block; width: 485px; margin-left: auto; margin-right: auto; margin-bottom: 15px; padding: 0; }
+  #blog .content .list:after, #the-best-diet .content .list:after { display: none; }
+  #blog .content .list li, #the-best-diet .content .list li { margin-bottom: 10px; -webkit-border-radius: 15px; border-radius: 15px; }
+  #blog .content .list li.active, #the-best-diet .content .list li.active { border-bottom: 1px solid #c9dfa2; }
+  #blog .content .box, #the-best-diet .content .box { width: 64%; }
+  #blog .content .sidebar, #the-best-diet .content .sidebar { width: 35%; margin-left: 1%; }
+  #the-best-diet .content .box { width: 62%; }
+  #the-best-diet .content .sidebar { margin-left: 3%; }
+  #training .content .photo-bg { display: none; }
+  #training .content .training { margin-left: auto; margin-right: auto; }
+  #who-lead .content .block { width: 100%; }
+  #who-lead .content .block .description .button { margin-top: 30px; }
+  #new-article { padding-bottom: 60px; }
+  #new-article .grey-bg { height: 500px; }
+  #new-article .content a { width: 45%; margin-right: 5% !important; margin-bottom: 30px; }
+  #new-article .content a:nth-child(2n+1) { margin-right: 0; }
+  #calc .grey-bg { height: 1050px; }
+  #calc .content .block { padding: 40px 0; -webkit-border-radius: 50px; border-radius: 50px; background-image: none; background-color: #dbe9b7; } }
+
+@media (max-width: 925px) { #courses .content .block { max-width: 770px; margin-left: auto; margin-right: auto; }
+  #courses .content .block .course .border .work, #courses .content .block .course .border .list { padding-left: 30px; }
+  #courses .content .block .description { padding-top: 20px; padding-bottom: 20px; }
+  #courses .content .block .description .list { margin-bottom: 57px; } }
+
+@media (max-width: 800px) { header .content .logo { float: none; display: block; width: 100%; max-width: 300px; margin-left: auto; margin-right: auto; }
+  header .content .search { float: none; width: 80%; margin-left: auto; margin-right: auto; }
+  header .content .contacts { float: none; margin-left: auto; margin-right: auto; }
+  #contacts .content h2 { width: 90%; }
+  #contacts .content .row .left { overflow: hidden; float: none; width: 100%; max-width: 215px; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
+  #contacts .content .row .left ul { float: left; width: 100%; }
+  #contacts .content .row form { width: 90%; margin-left: 5%; margin-right: 5%; }
+  #review .content .review .photo { float: none; width: 100%; max-width: 200px; margin-left: auto; margin-right: auto; margin-bottom: 35px; }
+  #review .content .review .text { width: 95%; margin-left: 2.5%; margin-right: 2.5%; }
+  #review .content .review .text:before { top: -28px; left: 50%; -webkit-transform: translateX(-50%) rotate(90deg); -ms-transform: translateX(-50%) rotate(90deg); transform: translateX(-50%) rotate(90deg); }
+  #review .content .review .text .message { text-align: justify; }
+  #courses .content h2 { font-size: 35px; }
+  #courses .content .block { max-width: 90%; margin-left: 5%; margin-right: 5%; }
+  #courses .content .block .course { width: 100%; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
+  #courses .content .block .course .photo img { -webkit-border-radius: 30px 30px 0 0; border-radius: 30px 30px 0 0; }
+  #courses .content .block .course .border { -webkit-border-radius: 0; border-radius: 0; }
+  #courses .content .block .course .border .list li { text-align: justify; }
+  #courses .content .block .description { width: 100%; padding-top: 35px; padding-bottom: 35px; -webkit-border-radius: 0 0 30px 30px; border-radius: 0 0 30px 30px; -webkit-box-shadow: none; box-shadow: none; }
+  #courses .content .block .description .what-do { padding: 0; }
+  #courses .content .block .description .list li { text-align: justify; }
+  #seminar .content .seminar .block-p-d { min-width: 360px; }
+  #seminar .content .seminar .block-p-d .photo { width: 27%; }
+  #seminar .content .seminar .block-p-d .date { width: 73%; min-height: 105px; }
+  #seminar .content .seminar .block-p-d .date .day { margin-top: 10px; font-size: 110px; line-height: 95px; }
+  #seminar .content .seminar .block-p-d .date .month { margin-top: 30px; }
+  #seminar .content .seminar .block-d-l { padding-top: 15px; }
+  #the-best-diet .content .box .comments .review .photo, #the-best-diet .content .box .comments .answer .photo { float: none; width: 100%; max-width: 150px; margin-left: auto; margin-right: auto; margin-bottom: 35px; padding-right: 0; }
+  #the-best-diet .content .box .comments .review .text, #the-best-diet .content .box .comments .answer .text { width: 100%; }
+  #the-best-diet .content .box .comments .review .text:before, #the-best-diet .content .box .comments .answer .text:before { top: -28px; left: 50%; -webkit-transform: translateX(-50%) rotate(90deg); -ms-transform: translateX(-50%) rotate(90deg); transform: translateX(-50%) rotate(90deg); }
+  #the-best-diet .content .box .comments .review .text .message, #the-best-diet .content .box .comments .answer .text .message { text-align: justify; }
+  #the-best-diet .content .box .add-com input { width: 100%; margin-right: 0; margin-bottom: 15px; }
+  #the-best-diet .content .box .add-com .button { width: 100%; } }
+
+@media (max-width: 750px) { footer .content .row:last-child { margin-top: 15px; }
+  footer .content .row nav { width: 100%; max-width: 250px; }
+  footer .content .row nav ul li { width: 100%; margin-left: 0; margin-bottom: 15px; text-align: center; }
+  footer .content .row .copyright { margin-top: 0; }
+  #seminar .content .seminar .block-p-d { min-width: 300px; margin-bottom: 20px; }
+  #seminar .content .seminar .block-p-d .photo { width: 40%; }
+  #seminar .content .seminar .block-p-d .date { float: right; width: 50%; min-height: auto; }
+  #seminar .content .seminar .block-p-d .date .day { margin-top: 0; margin-right: 0; font-size: 85px; line-height: 75px; }
+  #seminar .content .seminar .block-p-d .date .month { float: left; margin-top: 0; margin-left: 3px; font-size: 18px; }
+  #seminar .content .seminar .block-p-d .date .start { float: left; margin-left: 3px; font-size: 15px; }
+  #seminar .content .seminar .block-d-l { min-width: 95%; padding-top: 10px; }
+  #seminar .content .seminar .block-d-l .description, #seminar .content .seminar .block-d-l .links { float: none; display: table; min-width: 100%; margin-left: auto; margin-right: auto; }
+  #seminar .content .seminar .block-d-l .description .category, #seminar .content .seminar .block-d-l .description .title { text-align: center; }
+  #seminar .content .seminar .block-d-l .description .snippet { display: block; text-align: justify; }
+  #sport-dietolog .content .block { width: 90%; margin-left: 5%; margin-right: 5%; }
+  #sport-dietolog .content .block .photo .photo-overlay { top: 150px; }
+  #sport-dietolog .content .block .photo .photo-overlay .title, #sport-dietolog .content .block .photo .photo-overlay .snippet { padding: 0 110px; }
+  #sport-dietolog .content .block .border { min-height: auto; }
+  #sport-dietolog .content .block .border .list { margin-bottom: 20px; }
+  #blog .content .box > div .title { text-align: center; }
+  #blog .content .box > div .snippet { text-align: justify; }
+  #blog .content .box > div .article-big .details .category, #blog .content .box > div .article-big .details .date { width: 100%; text-align: center; }
+  #blog .content .box > div .article-big .details .category { margin-top: 25px; }
+  #blog .content .box > div .article-big .details .date { margin-top: 15px; }
+  #blog .content .box > div .article-small .category, #blog .content .box > div .article-small .date { width: 100%; text-align: center; }
+  #blog .content .box > div .article-small .category { margin-top: 0px; }
+  #blog .content .box > div .article-small .date { margin-top: 15px; }
+  #blog .content .box, #the-best-diet .content .box { width: 90%; margin-left: 5%; margin-right: 5%; }
+  #blog .content .sidebar, #the-best-diet .content .sidebar { width: 70%; margin-left: 15%; margin-right: 15%; }
+  #the-best-diet .content .box h2.title { text-align: center; }
+  #the-best-diet .content .box .social { display: table; width: auto; margin-left: auto; margin-right: auto; }
+  #training .content .training { width: 90%; height: 100%; min-height: 100px; margin-left: 5%; margin-right: 5%; padding: 20px 0; }
+  #training .content .training h1 { top: 0px; width: 90%; margin-left: 5%; margin-right: 5%; padding: 0; text-align: center; }
+  #training .content .training h1 span { display: inline-block; }
+  #training .content .training .green, #training .content .training .block { margin-left: auto; margin-right: auto; }
+  #training .content .training .green { padding-left: 0; text-align: center; }
+  #who-lead .content .block .photo { float: none; width: 100%; max-width: 260px; margin-left: auto; margin-right: auto; margin-bottom: 60px; }
+  #who-lead .content .block .description { width: 95%; margin-left: 2.5%; margin-right: 2.5%; padding: 0; }
+  #who-lead .content .block .description h2 { text-align: center; }
+  #who-lead .content .block .description h2:after { margin-left: auto; margin-right: auto; }
+  #who-lead .content .block .description p { text-align: justify; }
+  #who-lead .content .block .description p.name { text-align: center; }
+  #who-lead .content .block .description .button { float: none; display: table; margin-left: auto; margin-right: auto; }
+  #new-article .content a { float: none; display: table; width: 100%; max-width: 350px; margin-left: auto; margin-right: auto !important; }
+  #calc .content .block form { width: 90%; margin-left: 5%; margin-right: 5%; }
+  #calc .content .block form #age, #calc .content .block form #weight, #calc .content .block form #height, #calc .content .block form #slider { width: 70%; } }
+
+@media (max-width: 600px) { #contacts .content .row form textarea { width: 90%; margin-left: 5%; margin-right: 5%; margin-bottom: 20px; }
+  #contacts .content .row form div { width: 90%; margin-left: 5%; margin-right: 5%; }
+  #contacts .content .row form div button { margin-top: 0; }
+  #review .content .review .text .message { font-size: 16px; }
+  #sport-dietolog .content .block .photo .photo-overlay { top: 100px; }
+  #sport-dietolog .content .block .photo .photo-overlay .title, #sport-dietolog .content .block .photo .photo-overlay .snippet { padding: 0 50px; }
+  #documentation .content .docum { width: 75%; margin-left: 12.5%; margin-right: 12.5%; }
+  #documentation .content .docum .slick-prev, #documentation .content .docum .slick-next { display: none !important; }
+  #who-lead .content .block .description .button { width: 100%; }
+  #calc .content .block form #age, #calc .content .block form #weight, #calc .content .block form #height, #calc .content .block form #slider { width: 100%; }
+  #calc .content .block form .title { width: 100%; margin-bottom: 30px; text-align: center; }
+  #calc .content .block form .gender { width: 65%; margin-left: 17.5%; margin-right: 17.5%; }
+  #calc .content .block form .gender .title { margin-right: 15px; margin-bottom: 20px; }
+  #calc .content .block form .box .container { width: 100%; }
+  #calc .content .block form .box .container p.title { text-align: left; }
+  #calc .content .block form .box .container span { padding-right: 0; }
+  #calc .content .block form .button { width: 100%; }
+  #courses .content h2 { font-size: 28px; }
+  h1.title { font-size: 36px; }
+  .modal { top: 5%; width: 90%; } }
+
+@media (max-width: 500px) { h1 span { display: inline-block; }
+  #seminar .content .seminar .block-p-d { /*.photo{ float: none; width: 160px; margin-left: auto; margin-right: auto; } .date{ float: none; display: table; min-width: 280px; margin-left: auto; margin-right: auto; padding-left: 0; .day{ } }*/ }
+  #seminar .content .seminar .block-d-l { padding-top: 10px; }
+  #seminar .sem-but { max-width: 280px; }
+  #courses .content .block .course .border .work, #courses .content .block .course .border .list { padding-left: 10px; }
+  #courses .content .block .description .list { padding-left: 10px; }
+  #courses .content .block .description .button { width: 100%; font-size: 16px; }
+  #sport-dietolog .content .block { width: 95%; margin-left: 2.5%; margin-right: 2.5%; }
+  #sport-dietolog .content .block:nth-child(2n) { margin-right: 2.5%; }
+  #sport-dietolog .content .block .photo .photo-overlay { top: 15px; }
+  #sport-dietolog .content .block .photo .photo-overlay .title, #sport-dietolog .content .block .photo .photo-overlay .snippet { padding: 0 10px; }
+  #sport-dietolog .content .block .photo .photo-overlay .title { font-size: 20px; }
+  #sport-dietolog .content .block .border { padding-left: 10px; padding-right: 10px; }
+  #sport-dietolog .content .block .border .button { width: 95%; }
+  #sport-dietolog .content .block .border .button:before { left: 0; width: 100%; }
+  #blog .content .box > div .article-big .photo { width: 90%; }
+  #blog .content .box > div .article-small img { width: 95%; }
+  #blog .content .list, #the-best-diet .content .list { width: 100%; }
+  #blog .content .list li, #the-best-diet .content .list li { float: none; display: table; margin-left: auto; margin-right: auto; }
+  #blog .content .box, #the-best-diet .content .box { width: 97%; margin-left: 1.5%; margin-right: 1.5%; }
+  #blog .content .sidebar, #the-best-diet .content .sidebar { width: 95%; margin-left: 2.5%; margin-right: 2.5%; }
+  #the-best-diet .content .box .comments .review .text div, #the-best-diet .content .box .comments .answer .text div { width: 100%; }
+  #the-best-diet .content .box .comments .review .text div span, #the-best-diet .content .box .comments .answer .text div span { text-align: center; }
+  #the-best-diet .content .box .comments .review .text .button, #the-best-diet .content .box .comments .answer .text .button { float: none; display: table; }
+  #documentation .content .docum { width: 75%; margin-left: 12.5%; margin-right: 12.5%; }
+  #training .content .training { padding: 10px 0; }
+  #training .content .training h1 { width: 100%; margin-left: 0; margin-right: 0; font-size: 26px; }
+  #training .content .training .block { width: 100%; padding: 0 10px; }
+  #calc .content .block form .gender { width: 100%; margin-left: 0; margin-right: 0; }
+  #calc .content .block form .gender .radio-but { display: inline-block; width: 51%; margin-right: 29.5%; margin-left: 29.5%; margin-bottom: 15px; }
+  #calc .content .block form .box .container input { margin-left: 5%; }
+  #documentation .content h2, #calc .content h2, #new-article .content h2 { font-size: 32px; }
+  #who-lead .content .block .description h2 { font-size: 32px; }
+  #new-article .content a { max-width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="dietologyApp">
+<head>
+	<!--<base href="/">-->
+	<meta charset="UTF-8">
+	<meta id="phone_viewport" name="viewport" content="width=device-width" initial-scale="1">
+	<title>Dietology</title>
+	<!-- Fonts start -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<!-- Fonts end -->  
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="HomeCtrl">
+	<header>
+		<div class="content">
+			<a href="#/" class="logo"><img src="image/logo.png" alt="Dietology"></a>
+			<form action="#" class="search">
+				<input name="search" type="text">
+				<button type="submit"></button>
+			</form>
+			<div class="contacts">
+				<a href="tel:+7(499)349-10-67">+7(499)349-10-67</a>
+				<a href="mailto:info@dietologpro.ru">info@dietologpro.ru</a>
+			</div>
+		</div>
+		<nav>
+			<div class="content">
+				<ul class="menu">
+					<li class="active"><a href="#/">Главная</a></li>
+					<li><a href="#/courses-and-prices">Курсы и Цены</a></li>
+					<li><a href="#/seminar">Семинары</a></li>
+					<li><a href="#/review">Отзывы</a></li>
+					<li><a href="#/blog">Блог</a></li>
+					<li><a href="#/contact">Контакты</a></li>
+				</ul>
+				<div class="social">
+					<a href="#/"></a>
+					<a href="#/"></a>
+				</div>
+				<div id="burger">
+					<button id="open-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="left">
+						<ul class="menu">
+							<li class="active"><a href="#/">Главная</a></li>
+							<li><a href="#/courses-and-prices">Курсы и Цены</a></li>
+							<li><a href="#/seminar">Семинары</a></li>
+							<li><a href="#/review">Отзывы</a></li>
+							<li><a href="#/blog">Блог</a></li>
+							<li><a href="#/contact">Контакты</a></li>
+						</ul>		
+						<span class="close"></span>
+					</div>
+					<div class="overlay"></div>
+				</div>		
+			</div>
+		</nav>
+	</header>
+	<ng-view>
+		
+	</ng-view>	
+	<footer>
+		<div class="content">
+			<div class="row">
+				<a href="#/" class="logo"><img src="image/logo-footer.png" alt="Dietology"></a>
+				<nav>
+					<ul>
+						<li class="active"><a href="#/">Главная</a></li>
+						<li><a href="#/courses-and-prices">Курсы и Цены</a></li>
+						<li><a href="#/seminar">Семинары</a></li>
+						<li><a href="#/review">Отзывы</a></li>
+						<li><a href="#/blog">Блог</a></li>
+						<li><a href="#/contact">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="row">
+				<span class="copyright">Copyright © 2018. Все права защищены.</span>
+				<div class="contacts">
+					<span>Свяжитесь с нами:<a href="tel:8-495-419-17-99">8-495-419-17-99</a></span>
+					<span>E-mail:<a href="mailto:info@snta.ru">info@snta.ru</a></span>
+				</div>
+				<div class="social">
+					<a href="#/"></a>
+					<a href="#/"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal">
+		<form action="#" class="have-free">
+			<span class="close"></span>
+			<p class="title">Получить бесплатную консультацию</p>
+			<input name="name" type="text" required="required" placeholder="Имя">
+			<input name="email" type="email" required="required" placeholder="E-mail">
+			<button class="button" type="submit">Отправить</button>
+		</form>
+	</div>
+	<div class="overlay-modal"></div>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

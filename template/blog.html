@@ -1,0 +1,86 @@
+<h1 class="title">БЛОГ</h1>
+<section id="breadcrumbs">
+	<div class="content">
+		<ul>
+			<li><a href="#/">Главная</a></li>
+			<li><a href="#/blog">Блог</a></li>
+		</ul>
+	</div>
+</section>
+<section id="blog">
+	<div class="content">
+		<ul class="list">
+			<li class="active training">Тренировки</li>
+			<li class="exercises">Упражнения</li>
+			<li>питание</li>
+			<li>похудение</li>
+			<li>девушкам</li>
+			<li>бодибилдеры</li> 
+		</ul>
+		<div class="box">
+			<div class="training" >
+				<div class="article-big">
+					<div class="details">
+						<p class="title">самая лучшая диета для  похудения</p>
+						<p class="snippet">Сегодня существует столько самых разнообразных диет, что очень сложно выбрать именно ту, которая подойдет вам лучше всего. Однако что делать, если нужна хорошая диета для похудения, которая точно принесет желанные результаты.</p>
+						<a href="#/" class="category">правильное питание и диеты</a>
+						<span class="date">09.10.2018</span>
+					</div>
+					<div class="photo">
+						<a href="#/blog/the-best-diet">
+							<img src="image/blog/blog-photo-1.png" alt="photo">
+						</a>
+					</div>
+				</div>
+				<div class="article-small" ng-repeat="training in trainings">
+					<a href="#/"><img ng-src="{{training.imageUrl}}" alt="{{training.name}}"></a>	
+					<p class="title">{{training.name}}</p>
+					<p class="snippet">{{training.snippet}}</p>
+					<a href="#/" class="category">{{training.category}}</a>
+					<span class="date">{{training.date}}</span>
+				</div>
+			</div>
+			<div class="exercises">
+				<div class="article-big">
+					<div class="details">
+						<p class="title">самая лучшая диета для  похудения</p>
+						<p class="snippet">Сегодня существует столько самых разнообразных диет, что очень сложно выбрать именно ту, которая подойдет вам лучше всего. Однако что делать, если нужна хорошая диета для похудения, которая точно принесет желанные результаты.</p>
+						<a href="#/" class="category">правильное питание и диеты</a>
+						<span class="date">09.10.2018</span>
+					</div>
+					<div class="photo">
+						<a href="#/blog/the-best-diet">
+							<img src="image/blog/blog-photo-2.png" alt="photo">
+						</a>
+					</div>
+				</div>
+				<div class="article-small" ng-repeat="exercise in exercises">
+					<a href="#/"><img ng-src="{{exercise.imageUrl}}" alt="{{exercise.name}}"></a>	
+					<p class="title">{{exercise.name}}</p>
+					<p class="snippet">{{exercise.snippet}}</p>
+					<a href="#/" class="category">{{exercise.category}}</a>
+					<span class="date">{{exercise.date}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<form action="#" class="subscribe">
+				<p class="title">ПОДПИСАТЬСЯ НА НОВЫЕ СТАТЬИ</p>
+				<input name="email" type="email" required="reauired" placeholder="E-mail">
+				<button type="submit" class="button">Подписаться</button>
+			</form>
+			<h2>популярные статьи</h2>
+			<a href="#/" class="block" ng-repeat="popularArticle in popularArticles">
+				<img ng-src="{{popularArticle.imageUrl}}" alt="{{popularArticle.photo-alt}}">
+				<span class="hover">{{popularArticle.name}}</span>
+			</a>
+			<form action="#" class="subscribe">
+				<p class="title">ПОДПИСАТЬСЯ НА НОВЫЕ СТАТЬИ</p>
+				<textarea name="message" required="required" placeholder="Опишите ваш вопрос"></textarea>
+				<input name="name" type="text" required="required" placeholder="Имя">
+				<input name="email" type="email" required="required" placeholder="E-mail">
+				<button class="button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</section>

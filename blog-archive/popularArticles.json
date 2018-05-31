@@ -1,0 +1,32 @@
+[
+    {
+        "id": "article-1", 
+        "imageUrl": "image/blog/sidebar-photo-1.png", 
+        "name": "порядок выполнения упражнений", 
+        "photo-alt": "порядок выполнения упражнений"
+    }, 
+    {
+        "id": "article-2", 
+        "imageUrl": "image/blog/sidebar-photo-2.png", 
+        "name": "порядок выполнения упражнений", 
+        "photo-alt": "порядок выполнения упражнений"
+    }, 
+    {
+        "id": "article-3", 
+        "imageUrl": "image/blog/sidebar-photo-1.png", 
+        "name": "порядок выполнения упражнений", 
+        "photo-alt": "порядок выполнения упражнений"
+    }, 
+    {
+        "id": "article-4", 
+        "imageUrl": "image/blog/sidebar-photo-2.png", 
+        "name": "порядок выполнения упражнений", 
+        "photo-alt": "порядок выполнения упражнений"
+    }, 
+    {
+        "id": "article-5", 
+        "imageUrl": "image/blog/sidebar-photo-1.png", 
+        "name": "порядок выполнения упражнений", 
+        "photo-alt": "порядок выполнения упражнений"
+    }
+]
